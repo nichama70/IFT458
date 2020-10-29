@@ -1,0 +1,16 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <link rel="stylesheet" type="text/css"
+    href="{% static 'css/style.css' %}">
+</head>
+    <body>
+        <h1>testing</h1>
+        <ul>
+        {% for dev in device_list %}
+            <li><a href="{% url 'product:detail' dev.id %}">{{ dev.manufacturer }} - {{ dev.model_number }}</a></li>
+        {% endfor %}
+        </ul>
+    </body>
+</html>

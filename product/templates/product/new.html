@@ -1,0 +1,110 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+    crossorigin="anonymous">
+    </script>
+    <script src = jquery.js></script>
+    
+    <link rel="stylesheet" type="text/css"
+    href="{% static 'css/style.css' %}">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li class=current><a href="login.html">Register/Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="newsletter">
+        <div class="container">
+            <h1>Module Detailed Specifications</h1>
+    
+        </div>
+    </section>
+    <section id="main">
+        <div class="container">
+            <article id="main-col">
+                <h1 class="page-title">Note: It can be assumed that with the exception of Model numbers, the specifications are the same for all modules in the test results</h1>
+                  
+
+            </article>
+
+        </div>
+
+    </section>
+
+        <div class="container">
+        
+        <header>
+          <h1>Please fill in the fields below</h1>
+        </header>
+    
+        <form action="index.html" method="post">
+                  
+            <fieldset>         
+                <legend>Specifications</legend>
+
+                <label for="Model"> Model:</label><br>
+                <input type="text" id="Model" name="model" placeholder="required">
+                <p id ="Model-name-error"></p>
+
+                <label for="Test_Sequence"> Test Sequence:</label><br>
+                <input type="text" id="Test_Sequence" name="Test_Sequence" placeholder="required">
+                <p id ="Test-sequence-name-error"></p>
+
+                <label for="Condition"> Condition:</label><br>
+                <input type="text" id="Condition" name="Condition"  placeholder="required">
+                <p id ="Condition-name-error"></p>
+
+                <label for="Date"> Date:</label><br>
+                <input type="text" id="Date" name="Date"  placeholder="required">
+                <p id ="Date-name-error"></p>
+                
+                <label for="ISC"> ISC:</label><br>
+                <input type="text" id="ISC" name="ISC"  placeholder="required">
+                <p id ="ISC-error"></p>
+
+                <label for="VOC">VOC:</label><br>
+                <input type="text" id="VOC" name="VOC"  placeholder="required">
+                <p id = "VOC-error"></p>
+                                    
+                <label for="IMP">IMP:</label><br>
+                <input type="text" id="IMP" name="IMP"  placeholder="required">
+                <p id = "IMP-Error"></p>
+
+                <label for="VMP">VMP:</label><br>
+                <input type="text" id="VMP" name="VMP"  placeholder="required">
+                <p id = "VMP-Error"></p>
+
+                <label for="FF">FF:</label><br>
+                <input type="text" id="FF" name="FF"  placeholder="required">
+                <p id = "FF-Error"></p>
+
+                <label for="PMP">PMP:</label><br>
+                <input type="text" id="PMP" name="PMP" placeholder="required">
+                <p id = "PMP-Error"></p>
+    
+            </fieldset>      
+            
+          <button type="submit" id = 'submitButton'>Register</button>
+          <p id = 'fillOutAllFields'></p>
+        </form>
+    
+      </div>
+
+    <footer>
+        <p>Solar Panel Company Copyright &copy; 2020</p>
+    </footer>
+</body>
+</html>
