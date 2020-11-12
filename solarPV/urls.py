@@ -20,4 +20,7 @@ urlpatterns = [
     path('polls/', include('polls.urls')),
     path('product/', include('product.urls')),    
     path('admin/', admin.site.urls),
+    path('backend/', include('backend.urls')),
+    path('courses/', include('courses.urls')),
+    path('api/', include('courses.api.url', namespace='api')),
 ]
